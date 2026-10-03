@@ -1,0 +1,14 @@
+{
+  "now": 80,
+  "grants": [
+    {
+      "id": "g",
+      "amount": 1000,
+      "start": 0,
+      "end": 100,
+      "cliff": 20,
+      "claimed": 100,
+      "revoked_at": 50
+    }
+  ]
+}

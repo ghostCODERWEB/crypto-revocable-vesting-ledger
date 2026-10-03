@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crypto-revocable-vesting-ledger"
+version = "0.1.0"
+description = "Calculate cliff and linear vesting, freeze accrual on revocation and reconcile beneficiary and issuer entitlements."
+requires-python = ">=3.11"
+license = "MIT"
+
+[project.scripts]
+crypto-revocable-vesting-ledger = "cryptolab:main"
+
+[tool.setuptools.packages.find]
+include = ["cryptolab*"]
+
+[tool.setuptools.package-data]
+cryptolab = ["web/*"]
